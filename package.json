@@ -1,0 +1,20 @@
+{
+  "name": "eclipse-pama1234-keymap",
+  "displayName": "Eclipse Pama1234 Keymap",
+  "description": "as name",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Keymaps"
+  ],
+  "contributes": {
+    "keybindings": [
+      {
+        "key": "ctrl+.",
+        "command": "workbench.action.showCommands"
+      }
+    ]
+  }
+}
