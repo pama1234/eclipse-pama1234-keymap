@@ -1,0 +1,140 @@
+// 将键绑定放在此文件中以覆盖默认值auto[]
+[
+  {
+    "key": "alt+oem_2",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "alt+oem_2",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+oem_period",
+    "command": "editor.action.inspectTMScopes"
+  },
+  {
+    "key": "ctrl+r shift+r",
+    "command": "npm-script.run",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+r shift+r",
+    "command": "-npm-script.run",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+r t",
+    "command": "npm-script.test",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+r t",
+    "command": "-npm-script.test",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+r l",
+    "command": "npm-script.showOutput",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+r l",
+    "command": "-npm-script.showOutput",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+r shift+x",
+    "command": "npm-script.terminate-script",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+r shift+x",
+    "command": "-npm-script.terminate-script",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+r r",
+    "command": "npm-script.rerun-last-script",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "ctrl+r r",
+    "command": "-npm-script.rerun-last-script",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+shift+r",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "shift+alt+s",
+    "command": "editor.action.sourceAction"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-workbench.action.findInFiles"
+  },
+  {
+    "key": "ctrl+shift+h",
+    "command": "-workbench.action.replaceInFiles"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "editor.action.startFindReplaceAction",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.replaceInFiles"
+  },
+  {
+    "key": "ctrl+shift+f",
+    "command": "-workbench.action.findInFiles"
+  },
+  {
+    "key": "ctrl+f",
+    "command": "-actions.find",
+    "when": "editorFocus || editorIsOpen"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+k shift+enter",
+    "command": "-workbench.action.unpinEditor",
+    "when": "activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+q",
+    "command": "workbench.action.pinEditor",
+    "when": "!activeEditorIsPinned"
+  },
+  {
+    "key": "ctrl+k shift+enter",
+    "command": "-workbench.action.pinEditor",
+    "when": "!activeEditorIsPinned"
+  }
+]

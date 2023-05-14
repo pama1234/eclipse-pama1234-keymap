@@ -3,18 +3,32 @@
   "displayName": "Eclipse Pama1234 Keymap",
   "description": "as name",
   "version": "0.0.1",
+  "publisher": "pama1234",
+  "preview": true,
+  "icon": "assets/icon.png",
+  "readme": "README.md",
+  "author": {
+    "name": "pama1234"
+  },
+  "license": "SEE LICENSE IN LICENSE.txt",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pama1234/eclipse-pama1234-keymap.git"
+  },
   "engines": {
     "vscode": "^1.78.0"
   },
   "categories": [
     "Keymaps"
   ],
+  "keywords": [
+    "Keybindings",
+    "Keymaps",
+    "Keymap",
+    "Eclipse",
+    "Pama1234"
+  ],
   "contributes": {
-    "keybindings": [
-      {
-        "key": "ctrl+.",
-        "command": "workbench.action.showCommands"
-      }
-    ]
+    "keybindings": []
   }
 }
