@@ -16,7 +16,7 @@
     "url": "https://github.com/pama1234/eclipse-pama1234-keymap.git"
   },
   "engines": {
-    "vscode": "^1.78.0"
+    "vscode": "^1.76.2"
   },
   "categories": [
     "Keymaps"
