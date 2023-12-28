@@ -2,7 +2,7 @@
   "name": "eclipse-pama1234-keymap",
   "displayName": "Eclipse Pama1234 Keymap",
   "description": "as name",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "pama1234",
   "preview": true,
   "icon": "assets/icon.png",
@@ -16,7 +16,7 @@
     "url": "https://github.com/pama1234/eclipse-pama1234-keymap.git"
   },
   "engines": {
-    "vscode": "^1.76.2"
+    "vscode": "^1.85.1"
   },
   "categories": [
     "Keymaps"
@@ -693,6 +693,109 @@
         "key": "alt+shift+up",
         "command": "editor.action.smartSelect.expand",
         "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+shift+d",
+        "command": "-workbench.view.debug",
+        "when": "viewContainer.workbench.view.debug.enabled"
+      },
+      {
+        "key": "ctrl+shift+d",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "shift+alt+down",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+      },
+      {
+        "key": "ctrl+2",
+        "command": "-workbench.action.focusSecondEditorGroup"
+      },
+      {
+        "key": "ctrl+space",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+      },
+      {
+        "key": "ctrl+space",
+        "command": "-focusSuggestion",
+        "when": "suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+      },
+      {
+        "key": "ctrl+space",
+        "command": "-toggleSuggestionDetails",
+        "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+      },
+      {
+        "key": "ctrl+space",
+        "command": "-workbench.action.terminal.sendSequence",
+        "when": "terminalFocus && terminalShellIntegrationEnabled && !accessibilityModeEnabled && terminalShellType == 'pwsh'"
+      },
+      {
+        "key": "ctrl+space",
+        "command": "-workbench.action.terminal.sendSequence",
+        "when": "config.terminal.integrated.shellIntegration.suggestEnabled && terminalFocus && terminalShellIntegrationEnabled && !accessibilityModeEnabled && terminalShellType == 'pwsh'"
+      },
+      {
+        "key": "alt+a",
+        "command": "extension.translateTextPreferred",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "shift+alt+t",
+        "command": "-extension.translateTextPreferred",
+        "when": "editorTextFocus"
+      },
+      {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quickOpenNavigateNextInViewPicker",
+        "when": "inQuickOpen && inViewsPicker"
+      },
+      {
+        "key": "ctrl+q",
+        "command": "-workbench.action.quickOpenView"
+      },
+      {
+        "key": "ctrl+shift+q",
+        "command": "-workbench.action.quickOpenNavigatePreviousInViewPicker",
+        "when": "inQuickOpen && inViewsPicker"
+      },
+      {
+        "key": "ctrl+q",
+        "command": "workbench.action.unpinEditor",
+        "when": "true"
+      },
+      {
+        "key": "ctrl+q",
+        "command": "-workbench.action.unpinEditor",
+        "when": "activeEditorIsPinned"
+      },
+      {
+        "key": "ctrl+shift+q",
+        "command": "workbench.action.pinEditor",
+        "when": "true"
+      },
+      {
+        "key": "ctrl+q",
+        "command": "-workbench.action.pinEditor",
+        "when": "!activeEditorIsPinned"
+      },
+      {
+        "key": "ctrl+shift+m",
+        "command": "-workbench.actions.view.problems",
+        "when": "workbench.panel.markers.view.active"
+      },
+      {
+        "key": "ctrl+shift+m",
+        "command": "markdown.showPreview",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
+      },
+      {
+        "key": "ctrl+shift+v",
+        "command": "-markdown.showPreview",
+        "when": "!notebookEditorFocused && editorLangId == 'markdown'"
       }
     ]
   }
